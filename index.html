@@ -4,40 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Your Portfolio Title</title>
+    <title><%= title %></title>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="image-container">
-                <img src="/images/logo.png" alt="Cristiano Valder Logo" class="logo">
+<div class="site-container"> <!-- This is the border / color around the pages-->
+    <div class="content-container"> <!-- This is for the solid border limiting the page's size =) -->
+        <header>
+            <nav class="navbar"> <!-- Menu and logo for all pages -->
+                <div class="image-container">
+                    <img src="/images/logo.png" alt="Cristiano Valder Logo" class="logo">
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Content from index.ejs -->
+        <div class="container">
+            <h1 class="center-text">Welcome to My Portfolio</h1>
+            <p class="center-parag" style="font-size: 20px;">My name is Cristiano Valder, an ecommerce professional with experience in Database and Process Automation.<br>
+                Feel free to browse and ask questions!<br><br></p>
+
+            <!-- Mission statement -->
+            <div class="mt-4">
+                <h2 style="font-size: 30px;">Mission Statement</h2>
+                <p class="center-parag" style="font-size: 20px;">
+                    My mission is to learn at all times, helping customers and peers to grow together.<br>
+                    I am passionate about creative solutions and eager to be challenged. <br>
+
+                </p>
             </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
-                </li>
-                <!-- Add links for other pages (About, Projects, Services, Contact) here -->
-            </ul>
-        </nav>
-    </header>
-    
-    <div class="container">
-        <h1 class="center-text">Welcome to My Portfolio</h1>
-        <p class="center-parag" style="font-size: 20px;">My name is Cristiano Valder, an ecommerce professional with experience in Database and Process Automation.<br>
-          Feel free to browse and ask questions!<br><br></p>
-
-        <!-- Mission statement -->
-        <div class="mt-4">
-            <h2 style="font-size: 30px;">Mission Statement</h2>
-            <p class="center-parag" style="font-size: 20px;">
-                My mission is to learn at all times, helping customers and peers to grow together.<br>
-                I am passionate about creative solutions and eager to be challenged. <br>
-            </p>
         </div>
-    </div>
 
-    <footer>
-        <!-- Add footer content here -->
-    </footer>
+        <!-- Footer content from footer.ejs -->
+        <footer> <!-- Contact information-->
+            <p class="footerinfo" style="font-size: 11px;margin-top: 100px;">
+                Email:</strong> cristiano.valder@gmail.com<br>
+                Phone:</strong> +1 999-789-1234<br>
+                Address:</strong> 123 Main St, Toronto, Canada<br>
+
+            </p>
+            <p class="footerinfo" style="font-size: 11px;">
+                &copy; 2023 Cristiano Valder. All rights reserved.
+            </p>
+        </footer>
+    </div> <!-- div is for reducing the width of the page -->
+
+</div>     <!-- div is for the border around the whole page -->
 </body>
 </html>
