@@ -1,0 +1,29 @@
+<!--
+    about.ejs
+    Cristiano Valder
+    301289929
+    1st October 2023
+ -->
+
+<%- include('partials/header.ejs') %>
+        
+<h1 class="center-text"><%= title %></h1>   
+
+<div class="about-body">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="/images/profile.png" alt="Profile Picture" class="img-fluid rounded-circle">
+        </div>
+        <div class="col-md-6">
+            <div class="text-center">
+                <h2>Cristiano Valder</h2>
+                <p style="font-size: 22px;">
+                    My name is Cristiano, <br>I am passionate about creative tech solutions for businesses.
+                </p>
+                <a href="/cv.pdf" target="_blank">Download my Resume (PDF)</a> <!-- Open CV PFD on another tab -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footer.ejs') %>

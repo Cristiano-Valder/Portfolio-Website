@@ -1,0 +1,457 @@
+/*  style.css
+    Cristiano Valder
+    301289929
+    1st October 2023
+*/
+
+.navbar {
+    background-color: #6794af;
+  }
+  
+  .navbar-brand {
+    color: white;
+  }
+  
+  .navbar-nav .nav-link {
+    color: white;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: rgb(255, 255, 255);
+  }
+
+.btn-primary {
+    background-color: white; /* Customize button color */
+    color: #fff; /* Customize text color */
+  }
+  
+  .btn-success {
+    background-color: #0c3158; /* Customize button color */
+    color: #fff; /* Customize text color */
+  }
+
+  h1{
+    font-size: xx-large;
+    font-weight: bold;
+    justify-content: center;
+  }
+
+  .logo{
+    width: 200px;
+    height: 200px;
+    margin-right: auto;
+
+  }
+  
+  .image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .center-text {
+    text-align: center;
+}
+
+h2{
+  text-align: center;
+  font-size: medium;
+  margin-top: auto;
+  margin-bottom: auto;
+
+}
+
+.img-fluid{
+  width: 150px;
+  height: 200px;
+}  
+  
+.col-md-6{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.center-text{
+  font-size: 50px;
+  font-weight: bold;
+  justify-content: center;
+  color: #0c3158;
+}
+
+.about-body{
+  justify-content: center;
+}
+
+.row{
+  display: inline;
+  justify-content: center;
+  align-items: center;
+
+}
+
+p{
+  margin-bottom: 5px;
+  
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  text-align: center;
+  margin: 20px; /* Adjust margin as needed */
+  border: 1px solid #ccc; /* Add a 1px solid gray border around each project */
+  padding: 20px; /* Add padding to create space between content and the border */
+  border-radius: 5px; /* Add rounded corners for a nicer look */
+  width: 300px; /* Fixed width for all projects */
+  height: 400px; /* Fixed height for all projects */
+
+}
+
+.project img {
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+  width: 200px; /* Fixed width for all images */
+  height: 200px; /* Fixed height for all images */
+
+}
+
+.project h2,
+.project p {
+  margin: 10px;
+}
+
+.project h2{
+  font-weight: bold;
+  font-size: large;
+}
+
+/* Existing CSS styles for header, navbar, buttons, text alignment, etc. */
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.contact-info,
+.contact-form {
+  text-align: center;
+  margin: 10px; /* Adjust margin as needed to create space between sections */
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Center form fields vertically with labels */
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  font-weight: bold;
+  flex: 1; /* Distribute available space evenly for labels */
+  text-align: left;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 2; /* Distribute available space evenly for form fields */
+}
+
+.btn-primary {
+  background-color: #0c3158; /* Customize button color */
+  color: #fff; /* Customize text color */
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #007bff; /* Change button color on hover */
+}
+
+nav {
+  text-align: center;
+}
+
+/* Add this CSS to your existing styles */
+
+.navbar {
+  background-color: #6794af;
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-toggler-icon {
+  background-color: rgb(255, 255, 255);
+}
+
+.btn-primary {
+  background-color: white; /* Customize button color */
+  color: #fff; /* Customize text color */
+}
+
+.btn-success {
+  background-color: #0c3158; /* Customize button color */
+  color: #fff; /* Customize text color */
+}
+
+h1{
+  font-size: xx-large;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.logo{
+  width: 200px;
+  height: 200px;
+}
+
+.image-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.center-text {
+  text-align: center;
+}
+
+h2{
+text-align: center;
+font-size: medium;
+margin-top: auto;
+margin-bottom: auto;
+
+}
+
+.img-fluid{
+width: 150px;
+height: 200px;
+}  
+
+.col-md-6{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.center-text{
+font-size: 50px;
+font-weight: bold;
+justify-content: center;
+color: #0c3158;
+}
+
+.about-body{
+justify-content: center;
+}
+
+.row{
+display: inline;
+justify-content: center;
+align-items: center;
+
+}
+
+p{
+margin-bottom: 5px;
+
+}
+
+.project-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.project {
+text-align: center;
+margin: 20px; /* Adjust margin as needed */
+border: 1px solid #ccc; /* Add a 1px solid gray border around each project */
+padding: 20px; /* Add padding to create space between content and the border */
+border-radius: 5px; /* Add rounded corners for a nicer look */
+width: 300px; /* Fixed width for all projects */
+height: 400px; /* Fixed height for all projects */
+
+}
+
+.project img {
+display: block;
+margin: 0 auto; /* Center the image horizontally */
+width: 200px; /* Fixed width for all images */
+height: 200px; /* Fixed height for all images */
+
+}
+
+.project h2,
+.project p {
+margin: 10px;
+}
+
+.project h2{
+font-weight: bold;
+font-size: large;
+}
+
+/* Existing CSS styles for header, navbar, buttons, text alignment, etc. */
+
+.contact-container {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column; /* Stack elements vertically */
+}
+
+.contact-info,
+.contact-form {
+text-align: center;
+margin: 10px; /* Adjust margin as needed to create space between sections */
+}
+
+.contact-form form {
+display: flex;
+flex-direction: column;
+}
+
+.form-group {
+display: flex;
+flex-direction: row;
+align-items: center; /* Center form fields vertically with labels */
+margin-bottom: 10px;
+}
+
+.form-group label {
+font-weight: bold;
+flex: 1; /* Distribute available space evenly for labels */
+text-align: left;
+}
+
+.form-group input,
+.form-group textarea {
+padding: 5px;
+border: 1px solid #ccc;
+border-radius: 5px;
+flex: 2; /* Distribute available space evenly for form fields */
+}
+
+.btn-primary {
+background-color: #0c3158; /* Customize button color */
+color: #fff; /* Customize text color */
+padding: 10px;
+border: none;
+cursor: pointer;
+}
+
+.btn-primary:hover {
+background-color: #007bff; /* Change button color on hover */
+}
+
+/* Add this CSS to your existing styles */
+
+.navbar {
+  background-color: #6794af;
+  display: flex; /* Display the menu items horizontally */
+  justify-content: center; /* Center the menu horizontally */
+}
+
+.nav-menu {
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Display the menu items horizontally */
+  padding: 0;
+  margin-top: 80px;
+  margin: 80px auto 0 95px; 
+}
+
+.nav-item {
+  margin: 0 10px; /* Add spacing between menu items */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.nav-link:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.center-parag{
+  text-align: center;
+}
+
+.center-parag p{
+  font-size: x-large;
+}
+
+
+.site-container {
+
+
+  background-color: rgb(228, 229, 233);
+  /*
+
+
+  
+  border-style: solid;
+  border-width: 10px 10px; 
+  border-color: black;
+  
+  
+  
+  border: 35vh solid rgb(192, 197, 224); 
+  box-sizing: content-box; 
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  */
+}
+
+.footerinfo{
+  text-align: center;
+
+}
+
+.content-container {
+  max-width: 1150px; /* Adjust the maximum width as per your preference */
+  margin: 0 auto; /* Center the content horizontally */
+  border-style: solid;
+  border-width: 2px;
+  background-color: white;
+}
+
+.img-fluid {
+  
+  width: 240px;
+  height: 334px;
+  border-radius: 50%; 
+  margin: auto; 
+  display: block;
+
+  
+}
