@@ -1,44 +1,96 @@
-<%- include('header.html') %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="public/style.css">
+    <title><%= title %></title>
+</head>
+<body>
+    <!-- Include the header content -->
+    <div class="site-container">
+        <div class="content-container">
+            <header>
+                <!-- Your header content here -->
+                <nav class="navbar">
+                    <!-- Menu and logo for all pages -->
+                    <div class="image-container">
+                        <img src="public/images/logo.png" alt="Cristiano Valder Logo" class="logo">
+                    </div>
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Portfolio-Website/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Portfolio-Website/about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Portfolio-Website/projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Portfolio-Website/services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Portfolio-Website/contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
-<h1 class="center-text"><%= title %></h1>
+            <h1 class="center-text"><%= title %></h1>
 
-<div class="contact-container">
-    <!-- Contact Information Panel -->
-    <div class="contact-info">
-        <h2>Contact Information</h2>
-        <p><strong>Email:</strong> cristiano.valder@gmail.com</p>
-        <p><strong>Phone:</strong> +1 999-789-1234</p>
-        <p><strong>Address:</strong> 123 Main St, Toronto, Canada</p>
-    </div>
+            <div class="contact-container">
+                <!-- Contact Information Panel -->
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p><strong>Email:</strong> cristiano.valder@gmail.com</p>
+                    <p><strong>Phone:</strong> +1 999-789-1234</p>
+                    <p><strong>Address:</strong> 123 Main St, Toronto, Canada</p>
+                </div>
 
-    <!-- Contact Form -->
-    <div class="contact-form">
-        <h2>Contact Us<br><br></h2>
-        <form>
-            <div class="form-group">
-                <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" name="firstName" required>
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2>Contact Us<br><br></h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="firstName">First Name:</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactNumber">Contact Number:</label>
+                            <input type="text" id="contactNumber" name="contactNumber" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary" onclick="showSuccessMessage()">Submit</button>
+                        <p id="successMessage" style="display: none; color: green;">Message Sent! We will get back to you shortly.</p>
+                    </form>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" name="lastName" required>
-            </div>
-            <div class="form-group">
-                <label for="contactNumber">Contact Number:</label>
-                <input type="text" id="contactNumber" name="contactNumber" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-            </div>
-            <button type="button" class="btn btn-primary" onclick="showSuccessMessage()">Submit</button>
-            <p id="successMessage" style="display: none; color: green;">Message Sent! We will get back to you shortly.</p>
-        </form>
-    </div>
+        
+    <!-- Include the footer content -->
+    <footer>
+        <!-- Contact information -->
+        <p class="footerinfo" style="font-size: 11px;margin-top: 100px;">
+            Email:</strong> cristiano.valder@gmail.com<br>
+            Phone:</strong> +1 999-789-1234<br>
+            Address:</strong> 123 Main St, Toronto, Canada<br>
+        </p>
+        <p class="footerinfo" style="font-size: 11px;">
+            &copy; 2023 Cristiano Valder. All rights reserved.
+        </p>
+    </footer>
+</body>
 </div>
-
-<%- include('footer.html') %>
+</div>
+</html>

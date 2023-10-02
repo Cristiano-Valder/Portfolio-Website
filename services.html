@@ -1,34 +1,87 @@
-<%- include('header.html') %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="public/style.css">
+    <title><%= title %></title>
+</head>
+<body>
+    <!-- Include the header content -->
+    <div class="site-container">
+        <div class="content-container">
+            <header>
+                <!-- Your header content here -->
+                <nav class="navbar">
+                    <!-- Menu and logo for all pages -->
+                    <div class="image-container">
+                        <img src="public/images/logo.png" alt="Cristiano Valder Logo" class="logo">
+                    </div>
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Portfolio-Website/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Portfolio-Website/about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Portfolio-Website/projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Portfolio-Website/services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Portfolio-Website/contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
-<h1 class="center-text"><%= title %></h1>
+            <h1 class="center-text"><%= title %></h1>
 
-<div class="project-container">
-    <!-- Service 1 -->
-    <div class="project">
-        <h2>General Programming</h2>
-        <img src="images/service1.png" alt="Service 1 Image" class="img-fluid">
-        <p>
-            Offering general programming services to meet your specific needs.
+            <div class="project-container">
+                <!-- Service 1 -->
+                <div class="project">
+                    <h2>General Programming</h2>
+                    <img src="public/images/service1.png" alt="Service 1 Image" class="img-fluid">
+                    <p>
+                        Offering general programming services to meet your specific needs.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="project">
+                    <h2>Web Development</h2>
+                    <img src="public/images/service2.png" alt="Service 2 Image" class="img-fluid">
+                    <p>
+                        Specializing in web development, including front-end and back-end solutions.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="project">
+                    <h2>Databases and Business Tech Solutions</h2>
+                    <img src="public/images/service3.png" alt="Service 3 Image" class="img-fluid">
+                    <p>
+                        Specialized in databases, I can help your business work smarter and improve performance through data analysis.
+                    </p>
+                </div>
+            </div>
+       
+
+    <!-- Include the footer content -->
+    <footer>
+        <!-- Contact information -->
+        <p class="footerinfo" style="font-size: 11px;margin-top: 100px;">
+            Email:</strong> cristiano.valder@gmail.com<br>
+            Phone:</strong> +1 999-789-1234<br>
+            Address:</strong> 123 Main St, Toronto, Canada<br>
         </p>
-    </div>
-
-    <!-- Service 2 -->
-    <div class="project">
-        <h2>Web Development</h2>
-        <img src="images/service2.png" alt="Service 2 Image" class="img-fluid">
-        <p>
-            Specializing in web development, including front-end and back-end solutions.
+        <p class="footerinfo" style="font-size: 11px;">
+            &copy; 2023 Cristiano Valder. All rights reserved.
         </p>
-    </div>
-
-    <!-- Service 3 -->
-    <div class="project">
-        <h2>Databases and Business Tech Solutions</h2>
-        <img src="images/service3.png" alt="Service 3 Image" class="img-fluid">
-        <p>
-            Specialized in databases, I can help your business work smarter and improve performance through data analysis.
-        </p>
-    </div>
+    </footer>
+</body>
 </div>
-
-<%- include('footer.html') %>
+</div>
+</html>

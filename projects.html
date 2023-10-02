@@ -1,41 +1,93 @@
-<%- include('header.html') %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="public/style.css">
+    <title><%= title %></title>
+</head>
+<body>
+    <!-- Include the header content -->
+    <div class="site-container">
+        <div class="content-container">
+            <header>
+                <!-- Your header content here -->
+                <nav class="navbar">
+                    <!-- Menu and logo for all pages -->
+                    <div class="image-container">
+                        <img src="public/images/logo.png" alt="Cristiano Valder Logo" class="logo">
+                    </div>
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Portfolio-Website/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Portfolio-Website/about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Portfolio-Website/projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Portfolio-Website/services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Portfolio-Website/contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
-<h1 class="center-text"><%= title %></h1>
+            <h1 class="center-text"><%= title %></h1>
 
-<div class="project-container">
-    <!-- Project 1 -->
-    <div class="project">
-        <h2>Marketplace Database Implementation and Administration<br><br>MUNDO DA MUSICA</h2>
-        <a href="https://quadrangular.mundodamusica.com.br/" target="_blank">
-        <img src="images/proj1.png" alt="Project 1 Image" class="img-fluid">
-        </a>
+            <div class="project-container">
+                <!-- Project 1 -->
+                <div class="project">
+                    <h2>Marketplace Database Implementation and Administration<br><br>MUNDO DA MUSICA</h2>
+                    <a href="https://quadrangular.mundodamusica.com.br/" target="_blank">
+                    <img src="public/images/proj1.png" alt="Project 1 Image" class="img-fluid">
+                    </a>
 
-        <p>
-            Part of the team that implemented, debugged, and maintained the database for the 1st Audio and Music niche Marketplace in Brazil
+                    <p>
+                        Part of the team that implemented, debugged, and maintained the database for the 1st Audio and Music niche Marketplace in Brazil
+                    </p>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project">
+                    <h2>Ecommerce Website and Business Automation<br><br>KOALA MUSIC</h2>
+                    <a href="https://www.koalamusic.com.br/" target="_blank">
+                    <img src="public/images/proj2.png" alt="Project 2 Image" class="img-fluid">
+                    </a>
+                    <p>
+                        Responsible for improving HTML structure for catalog creation and marketplace ads automation through XML/spreadsheet files
+                    </p>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project">
+                    <h2>Game Audio Creation & Implementation<br><br>JOKO'S MOBILE GAMES</h2>
+                    <a href="https://learn.culturalinfusion.org.au/jokos-world/" target="_blank">
+                    <img src="public/images/proj3.png" alt="Project 3 Image" class="img-fluid">
+                    </a>
+                    <p>
+                        Created all audio and music assets, assisting with audio programming and implementation
+                    </p>
+                </div>
+            </div>
+
+    <!-- Include the footer content -->
+    <footer>
+        <!-- Contact information -->
+        <p class="footerinfo" style="font-size: 11px;margin-top: 100px;">
+            Email:</strong> cristiano.valder@gmail.com<br>
+            Phone:</strong> +1 999-789-1234<br>
+            Address:</strong> 123 Main St, Toronto, Canada<br>
         </p>
-    </div>
-
-    <!-- Project 2 -->
-    <div class="project">
-        <h2>Ecommerce Website and Business Automation<br><br>KOALA MUSIC</h2>
-        <a href="https://www.koalamusic.com.br/" target="_blank">
-        <img src="images/proj2.png" alt="Project 2 Image" class="img-fluid">
-        </a>
-        <p>
-            Responsible for improving HTML structure for catalog creation and marketplace ads automation through XML/spreadsheet files
+        <p class="footerinfo" style="font-size: 11px;">
+            &copy; 2023 Cristiano Valder. All rights reserved.
         </p>
-    </div>
-
-    <!-- Project 3 -->
-    <div class="project">
-        <h2>Game Audio Creation & Implementation<br><br>JOKO'S MOBILE GAMES</h2>
-        <a href="https://learn.culturalinfusion.org.au/jokos-world/" target="_blank">
-        <img src="images/proj3.png" alt="Project 3 Image" class="img-fluid">
-        </a>
-        <p>
-            Created all audio and music assets, assisting with audio programming and implementation
-        </p>
-    </div>
+    </footer>
+</body>
 </div>
-
-<%- include('footer.html') %>
+</div>
+</html>
